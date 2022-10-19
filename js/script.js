@@ -103,10 +103,18 @@ const guess = function(){
     let guessArray = [];
 
     for(let i = 0; i < numInputs.length; i++){
-        if(!(isNaN(parseInt(numInputs[i].value))) && numInputs[i].value != ''){
+        if(!(isNaN(parseInt(numInputs[i].value))) && numInputs[i].value != '' && !(guessArray.includes(parseInt(numInputs[i].value)))){
             guessArray.push(parseInt(numInputs[i].value));
         }
     }
+    // let h = 0;
+    // while(h < numInputs.length){
+    //     let guessedNum = parseInt(numInputs[h].value);
+    //     if(!(isNaN(guessedNum)) && (numInputs[h].value != '')){
+    //         guessArray.push(guessedNum);
+    //         h++;
+    //     }
+    // }
 
     console.log(guessArray);
 
