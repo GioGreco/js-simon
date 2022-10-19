@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: calc(100vh - 160px);
+    width: 100%;
+}
+
+#countdown{
+    height: 10%;
+    width: 100%;
+    color: black;
+    font-size: 3rem;
+    color: palevioletred
+}
+
+#randomnumbers{
+    height: 55%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#randomnumbers span{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    border: 1px solid grey;
+    text-align: center;
+    line-height: 50px;
+    color: grey;
+}
+
+#outcome{
+    height: 25%;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+#outcome .recap{
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: firebrick
+}
+
+#outcome #result{
+    width: 100%;
+}
+
+#numberInputs{
+    height: 25%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#numberInputs input{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 40px;
+}
+
+.correct{
+    color: green !important;
+}
+
+.wrong{
+    color: red !important;
+}
+
+.submit{
+    height: 10%;
+}
+
+.submit #guessBtn{
+    background-color: palevioletred;
+}
+
+footer{
+    height: 160px;
+    width: 100%;
+}
+
+footer #playButton{
+    height: 40%;
+    width: 100px;
+    background-color: lightseagreen;
+    border: 1px solid lightseagreen;
+}
