@@ -113,7 +113,7 @@ const guess = function(){
     for(let i = 0; i < guessArray.length; i++){
         if(randomNumbers.includes(guessArray[i])){
             resultHTML.innerHTML += `<span class="correct">${guessArray[i]}</span>`
-            rightGuess++;
+            guessedRight++;
         }
         else if(!(randomNumbers.includes(guessArray[i]))){
             resultHTML.innerHTML += `<span class="wrong">${guessArray[i]}</span>`
